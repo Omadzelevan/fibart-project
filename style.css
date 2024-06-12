@@ -30,13 +30,13 @@ html {
 
 .navigation li a {
   text-decoration: none;
-  color: #867c86;
+  color: #453e45;
   margin-right: 2rem;
 }
 .navigation li {
   margin-right: 2rem;
 }
-#last-a{
+#last-a {
   color: #e1d9e2;
   margin: 0 auto;
 }
@@ -60,7 +60,7 @@ html {
 /* section 1 main page  */
 .section-hero {
   height: 80vh;
-  width: 100vw;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,4 +114,22 @@ html {
   width: 50px;
   margin-bottom: 10px;
   border: 2px solid #e5d9e6;
+}
+/* partners logos section */
+.logos-div{
+  text-align: center;
+  padding: 2rem ;
+  
+  background-color: #f9f5f9;
+  padding-bottom: 4.2rem;
+  
+}
+.logos-div  h1{
+  color: #867c86;
+}
+.logo-1 img{
+  height: 2rem;
+  margin: 2rem  2rem;
+  filter: brightness(0);
+  opacity: 0.5;
 }
