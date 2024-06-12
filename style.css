@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1.05;
+}
+/* navigation */
+.header {
+  background-color: #dfcfe0;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+.navigation {
+  color: #59535a;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #867c86;
+  margin-right: 2rem;
+}
+.navigation li {
+  margin-right: 2rem;
+}
+#last-a{
+  color: #e1d9e2;
+  margin: 0 auto;
+}
+
+.navigation li:last-child {
+  background-color: #867c86;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #eee;
+}
+.logo {
+  width: 50px;
+}
+.logo img {
+  height: 4rem;
+}
+
+/* section 1 main page  */
+.section-hero {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.2rem 0;
+  background-image: radial-gradient(
+      rgba(17, 17, 17, 0.863),
+      rgba(32, 32, 32, 0.363)
+    ),
+    url(./fibart-assets/hero/main-img.png);
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  color: #efe7f0;
+}
+.text {
+  max-width: 80rem;
+  background-image: radial-gradient(
+    rgba(17, 17, 17, 0.938),
+    rgba(32, 32, 32, 0.363)
+  );
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.text-h1 {
+  font-size: 4.2rem;
+  margin-bottom: 40px;
+}
+.text-p1 {
+  font-size: 1.2rem;
+}
+.hero-buttons {
+  margin-bottom: 40px;
+}
+.hero-buttons a {
+  padding: 0.8rem;
+  background-color: #867c86;
+  color: #e5d9e6;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "rubik", sans-serif;
+  margin: 20px;
+}
+
+.artists img {
+  margin-left: -20px;
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: 10px;
+  border: 2px solid #e5d9e6;
+}
