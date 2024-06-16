@@ -5,7 +5,7 @@
 }
 html {
   font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.05;
 }
 /* navigation */
@@ -60,7 +60,7 @@ html {
 /* section 1 main page  */
 .section-hero {
   height: 80vh;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,20 +116,344 @@ html {
   border: 2px solid #e5d9e6;
 }
 /* partners logos section */
-.logos-div{
+.logos-div {
   text-align: center;
-  padding: 2rem ;
-  
+  padding: 2rem;
+
   background-color: #f9f5f9;
   padding-bottom: 4.2rem;
-  
 }
-.logos-div  h1{
+.logos-div h1 {
   color: #867c86;
 }
-.logo-1 img{
+.logo-1 img {
   height: 2rem;
-  margin: 2rem  2rem;
+  margin: 2rem 2rem;
   filter: brightness(0);
   opacity: 0.5;
+}
+/* section how  */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 9.6rem;
+  /* gap: 8rem; */
+  gap: 4rem;
+}
+.heading-how {
+  margin-right: 4rem;
+}
+.subheading-how {
+  padding: 9.6rem 9.6rem 0 9.6rem;
+}
+
+.subheading-how h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.how-head-title {
+  color: #59535a;
+  font-size: 2rem;
+  background-color: #dfcfe0;
+  border-radius: 6px;
+}
+.steps {
+  font-size: 4rem;
+  font-weight: 100;
+  color: #867c86;
+  margin-bottom: 3rem;
+}
+.steps-head {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #433e43;
+  line-height: 1.3;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.how-work-img {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 0 auto;
+  width: 50%;
+  /* height: 80%; */
+  border-radius: 5px;
+  /* z-index: 2; */
+}
+.helper-img {
+  width: 40%;
+}
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 2%;
+  width: 70%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  background-color: #dfcfe0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+.step-img-box::before {
+  content: "";
+  display: block;
+  border-radius: 2%;
+  width: 60%;
+
+  padding-bottom: 45%;
+  background-color: #c9baca;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.grid {
+  display: grid;
+  /* gap: 9.6rem; */
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.section-how {
+  padding: 0 4rem;
+  padding-bottom: 4rem;
+}
+
+.how-title {
+  padding: 4rem;
+  padding-top: 8rem;
+}
+/* .how-title h2{
+  padding-bottom: 2rem;
+  background-color: orange;
+} */
+.mini-head,
+.section-card-title,
+.gallery-head {
+  background-color: #dfcfe0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  padding: 0.7rem 2rem;
+  /* border-radius: 5px; */
+  width: 14rem;
+  
+}
+
+.how-h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.step-number {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+}
+.heading-h3,
+.mini-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #433e43;
+  margin-top: 2rem;
+}
+.step-description {
+  font-size: 1.3rem;
+  color: #59535a;
+}
+
+.how-section {
+  background-color: #efe7f0;
+  padding: 0 9.6rem;
+}
+
+/* nft card section */
+.nft-card-section {
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 4rem;
+  text-align: center;
+  /* height: 100vh; */
+  padding: 2rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.card-1 {
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 0 3rem rgb(117, 117, 117);
+}
+.in-card-box {
+  padding: 0 2rem 4rem 4rem;
+}
+.cards-h1 {
+  margin-bottom: 1.6rem;
+  border-bottom: 0.4px solid #b2a6b3;
+  padding-bottom: 0.6rem;
+}
+.card-h2 {
+  /* margin-top: 2rem; */
+  font-size: 3rem;
+  color: #433e43;
+}
+.cards-h2 {
+  background-color: #dfcfe0;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+}
+.cards-h1 {
+  margin-top: 1.5rem;
+}
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: rem; */
+  /* margin: 2rem 2rem; */
+}
+.card-list li {
+  margin-top: 1rem;
+}
+.nft3-card-row {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.link-market {
+  text-decoration: none;
+  color: #66858c;
+
+  border-bottom: 1px solid #867c86;
+}
+.link {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+/* section gallery */
+
+.nft-gallery{
+  background-color: #efe7f0;
+  /* margin: 5rem;
+   */
+   max-width: 100%;
+   padding-top: 2rem;
+   padding-bottom:2rem ;
+}
+.artist-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* width: 100%; */
+  margin-top: 2rem;
+  margin-right: 2rem;
+  color: #867c86;
+}
+.artist-comment{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 110%;
+  margin-left: -4rem;
+}
+.img-3-cols {
+  display: flex;
+  /* width: 100%; */
+  /* padding: 4rem; */
+  
+}
+
+.img-3-cols img{
+  width:40%;
+  margin: 0.5rem;
+  border: 1px solid #433e43;
+}
+.gallery-head , .mini-title{
+  margin-left: 2rem;
+}
+/* section free nft */
+
+
+
+/* footer  */
+.about-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+  padding: 8rem;
+}
+
+.contact-us , .company , .Resources{
+  display: flex;
+  flex-direction: column;
+  /* align-items:center ; */
+  /* padding: 9rem; */
+}
+.contact-us , .company , .Resources ,p{
+  margin-bottom: 2rem;
+  color: #727272;
+}
+
+.footer-divs-head{
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 3rem;
+}
+.fib-logo{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  
+
+}
+.fib-logo img{
+  border-radius: 50%;
+  width: 30%;
+  
+}
+
+.social-link {
+display: flex;
+align-items: center;
+gap: 2rem;
+margin-bottom: 2rem;
+}
+.social-link img{
+  width: 10%;
+
 }
