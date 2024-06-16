@@ -457,3 +457,25 @@ margin-bottom: 2rem;
   width: 10%;
 
 }
+/* new free nft aplication */
+.free-nft{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+  gap: 4rem;
+  /* padding: 7rem; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin:  0 auto; */
+  box-shadow: 0 0 2.4rem rgb(151, 151, 151);
+  margin: 0 auto;
+  max-width: 110rem;
+  /* padding: 4.8rem 3.2rem; */
+  background-color: #e5d9e6;
+  margin: 8rem;
+
+}
+.free-img{
+  width: 100%;
+  border-radius: 10px;
+}
