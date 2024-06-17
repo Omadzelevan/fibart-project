@@ -7,6 +7,7 @@ html {
   font-family: "Rubik", sans-serif;
   /* font-weight: 400; */
   line-height: 1.05;
+  font-weight: 500;
 }
 /* navigation */
 .header {
@@ -31,11 +32,20 @@ html {
 .navigation li a {
   text-decoration: none;
   color: #453e45;
-  margin-right: 2rem;
+  padding: 1rem;
+  /* margin-right: 2rem; */
+  border-radius: 7px;
+  transition: all 0.5s;
 }
 .navigation li {
   margin-right: 2rem;
 }
+.navigation a:hover{
+background-color: #433e436b;
+background-color: 7px;
+}
+
+
 #last-a {
   color: #e1d9e2;
   margin: 0 auto;
@@ -43,7 +53,7 @@ html {
 
 .navigation li:last-child {
   background-color: #867c86;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -85,11 +95,14 @@ html {
   margin-bottom: 2rem;
 }
 .text-h1 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   margin-bottom: 40px;
 }
 .text-p1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 1.2px;
+  font-weight: 400;
 }
 .hero-buttons {
   margin-bottom: 40px;
@@ -106,12 +119,19 @@ html {
   align-items: center;
   font-family: "rubik", sans-serif;
   margin: 20px;
+  transition: all 0.5s;
 }
-
+.hero-buttons a:hover{
+  background-color: #433e43;
+  border: 1px solid white;
+}
+.artists{
+  margin-top: 5rem;
+}
 .artists img {
   margin-left: -20px;
   border-radius: 50%;
-  width: 50px;
+  width: 5%;
   margin-bottom: 10px;
   border: 2px solid #e5d9e6;
 }
@@ -309,6 +329,10 @@ html {
   width: 25%;
   text-align: center;
   box-shadow: 0 0 3rem rgb(117, 117, 117);
+  transition: all 0.5s;
+}
+.card-1:hover{
+  transform: translatey(-1rem);
 }
 .in-card-box {
   padding: 0 2rem 4rem 4rem;
@@ -358,6 +382,12 @@ html {
   color: #66858c;
 
   border-bottom: 1px solid #867c86;
+  transition: all 0.5s;
+}
+.link-market:hover{
+  /* transform: translatex(10rem); */
+  margin-left: 2rem;
+  color: #589faf;
 }
 .link {
   margin-top: 2rem;
@@ -393,15 +423,20 @@ html {
 }
 .img-3-cols {
   display: flex;
-  /* width: 100%; */
+  width: 100%;
   /* padding: 4rem; */
-  
+  /* overflow: hidden; */
+}
+.img-3-cols img:hover{
+  transform: scale(1.2);
 }
 
 .img-3-cols img{
   width:40%;
   margin: 0.5rem;
   border: 1px solid #433e43;
+  /* overflow: hidden; */
+  transition: all 0.5s;
 }
 .gallery-head , .mini-title{
   margin-left: 2rem;
@@ -424,7 +459,7 @@ html {
   /* align-items:center ; */
   /* padding: 9rem; */
 }
-.contact-us , .company , .Resources ,p{
+.contact-us , .company , .Resources , footer p{
   margin-bottom: 2rem;
   color: #727272;
 }
@@ -482,4 +517,64 @@ margin-bottom: 2rem;
 .about-info{
   border-top: 0.1px solid #dbdbdb;
   
+}
+
+.nft-avatar-h2{
+  font-size: 2rem;
+  margin: 2rem 0;
+
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-weight: 700;
+  margin-top: 5rem;
+
+
+}
+.form div{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form label {
+  font-size: 1.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  
+}
+.form select{
+  padding:0.7rem 1rem;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+.form input {
+  padding:1rem 1rem;
+  border-radius: 7px;
+  border: none;
+}
+.submit-button{
+  width: 80%;
+  /* margin: 0.1rem; */
+  height: 3rem;
+  border-radius: 7px;
+  background-color: #433e43;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  /* justify-content: space-between; */
+  margin-top: 2.5rem;
+  transition: all 0.5s;
+}
+.submit-button:hover{
+  background-color: #433e43a9;
+  /* font-size: 1.3rem; */
+  border: 1px solid white;
+}
+.nft-free-p{
+  
+  font-size: 1.2rem;
 }
